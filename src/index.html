@@ -13,15 +13,15 @@
 <body>
 
   <!-- This container holds all my content on webpage -->
-  <div class="">
+  <div class="h-screen max-[1000px] w-full">
     
-    <header class="flex items-center justify-between h-20">
+    <header class="flex items-center justify-between h-20 ">
 
       <!-- left-side navigation that has menu button, logo & nav -->
        <div class="flex items-center gap-4 mx-4">
 
         <!-- Menu Button Icon -->
-        <button>
+        <button id="menu-btn">
           <img src="/assets/images/icon-menu.svg" alt="Menu Button"/>
         </button>
 
@@ -31,6 +31,7 @@
         </a>
 
         <nav class="hidden">
+          <div class="nav-backdrop"></div>
           <!-- Navigation Links -->
           <ul>
             <li>
@@ -60,8 +61,9 @@
         <!-- Cart -->
          <div>
            <!-- Cart Button -->
-          <button>
+          <button id="cart-btn">
             <img src="/assets/images/icon-cart.svg" alt="Cart Icon Button" />
+            <span id="indicator"></span>
           </button>
 
           <!-- Cart Container -->
